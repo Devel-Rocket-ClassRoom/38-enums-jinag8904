@@ -8,8 +8,10 @@
 이 프로젝트에서 사용할 열거형 정의 (파일 하단에 작성):
 
 - `Animal` - Horse, Sheep = 5, Monkey
-- `[Flags] CharacterStatus` - None = 0, Poison = 1, Paralyzed = 1 << 1, Confused = 1 << 2, Invisible = 1 << 3
-- `[Flags] BuffStatus` - None = 0, AttackUp = 1, DefenseUp = 1 << 1, SpeedUp = 1 << 2, All = AttackUp | DefenseUp | SpeedUp
+- `[Flags] CharacterStatus` - None = 0, Poison = 1, Paralyzed = 1 << 1, 
+- Confused = 1 << 2, Invisible = 1 << 3
+- `[Flags] BuffStatus` - None = 0, AttackUp = 1, DefenseUp = 1 << 1, 
+- SpeedUp = 1 << 2, All = AttackUp | DefenseUp | SpeedUp
 
 ---
 
@@ -30,7 +32,8 @@
 
 ## 2. 플래그 결합하기
 
-`CharacterStatus.Poison`과 `CharacterStatus.Paralyzed`를 OR 연산자(`|`)로 결합하여 출력하세요.
+`CharacterStatus.Poison`과 `CharacterStatus.Paralyzed`를 OR 연산자(`|`)로 결합하여
+출력하세요.
 
 **실행 결과**
 
@@ -42,7 +45,8 @@ Poison, Paralyzed
 
 ## 3. 플래그 검사하기
 
-`CharacterStatus.Poison | CharacterStatus.Confused` 상태를 만들고, AND 연산자(`&`)로 독 상태인지, 마비 상태인지 각각 확인하세요.
+`CharacterStatus.Poison | CharacterStatus.Confused` 상태를 만들고, 
+AND 연산자(`&`)로 독 상태인지, 마비 상태인지 각각 확인하세요.
 
 **실행 결과**
 
@@ -71,7 +75,8 @@ Poison, Paralyzed
 ## 5. 플래그 열거형 활용 예제
 
 `BuffStatus` 플래그 열거형을 사용하여 버프 시스템을 구현하세요.
-`ApplyBuff`, `RemoveBuff`, `HasBuff` 로컬 함수를 만들고, AttackUp과 SpeedUp을 적용한 후 확인하고, AttackUp을 해제한 후 다시 확인하세요.
+`ApplyBuff`, `RemoveBuff`, `HasBuff` 로컬 함수를 만들고, 
+AttackUp과 SpeedUp을 적용한 후 확인하고, AttackUp을 해제한 후 다시 확인하세요.
 
 **실행 결과**
 

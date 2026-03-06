@@ -125,7 +125,8 @@ White
 
 ## 8. Enum.IsDefined - 값 유효성 검사
 
-`Enum.IsDefined`로 정수 1이 유효한 `Animal` 값인지, 100이 유효한 값인지, 문자열 "Tiger"가 유효한 값인지 각각 확인하여 출력하세요.
+`Enum.IsDefined`로 정수 1이 유효한 `Animal` 값인지, 100이 유효한 값인지, 
+문자열 "Tiger"가 유효한 값인지 각각 확인하여 출력하세요.
 
 **실행 결과**
 
